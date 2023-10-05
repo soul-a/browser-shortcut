@@ -46,7 +46,7 @@ export default function Home() {
     shortcutHandler.configure(shortcuts);
     shortcutHandler.subscribe();
 
-    () => shortcutHandler.unsubscribe();
+    return () => shortcutHandler.unsubscribe();
   }, [shortcuts]);
 
   return (
