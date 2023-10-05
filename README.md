@@ -42,7 +42,7 @@ Por final defina o `unsucribe` no `clean-up` do `useEffect`:
 ```tsx
 // useEffect(() => { ...
 
-() => shortcutHandler.unsubscribe();
+return () => shortcutHandler.unsubscribe();
 
 // }, [shortcuts]);
 ```
